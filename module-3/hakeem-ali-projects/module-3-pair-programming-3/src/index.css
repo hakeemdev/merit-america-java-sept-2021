@@ -1,0 +1,250 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #87CEEB;
+}
+
+nav ul {
+  margin: 0;
+  padding: 20px 4 0 0;
+}
+
+nav ul li {
+  list-style: none;
+  width: 30%;
+  background-color: #00afef;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+header img {
+  height: 100px;
+  width: auto;
+}
+header h1 {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+main img {
+  object-fit: cover;
+  margin-right: 20px;
+  width: 35%;
+  min-height: auto;
+  min-width: auto;
+}
+
+main li:before {
+  content: '🍡';
+  margin-left: -31px;
+  padding-right: 8px;
+}
+
+main, section, footer, #popsicle-race, #get-refreshed {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.store-button { /* used for store link in "Get refreshed" section */
+  width: 25%;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000000;
+  background-color: #00afef;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+#get-refreshed a{
+  list-style: none;
+  width: 30%;
+  background-color: #00afef;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+
+
+
+/* Changes below  */
+header{
+  display: flex;
+  flex-direction: row;
+}
+h1{
+  flex-grow: 1;
+  
+}
+
+nav ul{
+  display : flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#popsicle-race{
+  display: flex;
+  
+} 
+#popsicle-race div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#popsicle-race h2{
+  text-align: center;    
+}
+
+
+
+
+#get-refreshed {
+  display: flex;
+  flex-direction: column;
+  ;
+  
+} 
+#get-refreshed div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+} 
+#get-refreshed p{
+  display: flex;
+  flex-direction: column;
+  
+} 
+#get-refreshed h2{
+  display: flex;
+  justify-content: center;  
+}
+
+
+
+body.index { 
+  display: grid; 
+  height: 100vh;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 110px 1fr 250px 30px;
+  grid-template-areas: 
+  "header header1" 
+  "main main" 
+  "section section1"
+  "footer footer"; 
+  } 
+
+  nav{
+      grid-area: header1 ;
+  }
+
+  header{ 
+    grid-area: header; } 
+
+  main {
+     grid-area: main; } 
+
+  section #popsicle-race {
+      grid-area: section;
+  } 
+  section #get-refrshed {
+      grid-area: section1;
+  }
+
+  footer { grid-area: footer; } 
+
+  main{
+      display: flex;
+  }
+
+      
+  body.contact { 
+      display: grid; 
+      height: 100vh;
+      grid-gap: 5px;
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 110px 1fr 250px 30px;
+      grid-template-areas: 
+      "header header1" 
+      "main main" 
+      "main main"
+      "footer footer"; 
+      } 
+
+select, input[type=color], textarea{
+      width: 100%;
+padding: 2px 5px;
+}
+
+input[type=submit]{
+width: 75%;
+padding: 10px;
+border-radius: 5px;
+color: #ffffff;
+background-color: #00afef;
+font-weight: bold;
+text-align: center;           
+}
+
+
+@media screen and (max-width: 1024px){
+body.index {
+  display: grid;
+  height: 100vh;
+  grid-gap: 5px;
+  grid-template-columns: 1fr; 
+
+  grid-template-areas:
+  "header" 
+  "nav"
+  "img"
+  "didyouknow" 
+  "race"
+  "refreshed"
+  "footer"
+}
+
+h1{
+  grid-area: header;
+}
+nav{
+  grid-area: nav;
+}
+img #rainbow-popsicle{
+  grid-area: img;
+
+}
+main{
+  display: flex;
+  flex-direction: column; 
+  display:contents;
+}
+main div{
+  grid-area: didyouknow;
+}
+
+#popsicle-race {
+  grid-area: race;
+} 
+#get-refreshed {
+  grid-area: refreshed;
+}
+footer { grid-area: footer; } 
+} 

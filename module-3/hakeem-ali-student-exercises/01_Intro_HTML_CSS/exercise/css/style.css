@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    background-color: black;
+    position : relative;
+    width  : 740px;
+    height : 498px;
+    margin : 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+P {
+    text-align: center;
+}
+
+.quotes {
+    font-style: italic;
+    font-size: larger;
+}
+
+q {
+    font-style: italic;
+    font-size: larger;
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+section {
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid;
+    margin: auto;
+    width: auto;
+}
+
+th, td {
+    padding: 10px;
+}
+
+div {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    font-size: larger;
+    text-align: left;
+}
+
+a {
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    width: 50%;
+}
+
+.info-page {
+    background-color: black;
+    background-image: url(https://images7.alphacoders.com/816/816811.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,55 @@
+2021-12-12T16:26:52.5725076
+Search application started.
+
+2021-12-12T16:26:52.6135475
+data\file1.txt
+data\file2.doc
+data\file3.dat
+data\file4.txt
+data\file5.doc
+data\file6.dat
+
+
+2021-12-12T16:26:52.6545827
+small:[2-5]
+prefer:[0-11]
+line:[0-8, 1-2, 2-13, 3-10, 5-9]
+gold:[3-3]
+confused:[4-10, 5-1]
+across:[0-3, 2-10]
+that:[2-8]
+not:[1-4, 2-3, 4-7]
+appreciate:[4-8]
+and:[4-5]
+does:[4-6]
+chipmunk:[2-1, 4-13, 5-2]
+by:[5-5]
+scampers:[0-2, 1-5]
+baffled:[5-4]
+if:[0-9]
+you:[0-10]
+a:[1-7, 2-0, 2-4, 2-11, 4-0, 4-3, 4-12]
+striped:[2-6, 3-1, 5-7]
+or:[0-7]
+like:[1-6]
+king:[3-11]
+was:[5-3]
+telephone:[0-5, 1-1, 2-12, 3-4, 5-8]
+is:[2-2, 4-2]
+being:[4-9]
+the:[0-0, 0-4, 1-0, 3-0, 3-9, 5-0, 5-6]
+with:[3-2, 4-11]
+squirrel:[0-1, 1-8, 2-7, 4-1, 4-4]
+wire:[0-6, 3-5]
+belongs:[3-6]
+to:[3-7]
+larry:[3-8]
+runs:[1-3, 2-9]
+
+
+2021-12-12T16:26:52.6615906
+Keyword 'squirrel' found in: [data\file1.txt, data\file2.doc, data\file3.dat, data\file5.doc]
+
+2021-12-12T16:26:52.6766035
+Keyword 'telephone line' found in: [data\file2.doc, data\file3.dat, data\file6.dat, data\file1.txt, data\file4.txt]
+

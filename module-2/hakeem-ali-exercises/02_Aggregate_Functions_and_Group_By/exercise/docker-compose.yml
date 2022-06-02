@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  db:
+    image: postgres:10
+    environment:
+      POSTGRES_PASSWORD: "postgres1"
+      # Name of the database to create/connect to
+      POSTGRES_DB: "UnitedStates"
+    volumes:
+      - type: tmpfs
+        target: /var/lib/postgresql/data
+        volume:
+          nocopy: true
+        tmpfs:
+          size: 104857600
+  testenv:
+    build: .
+    command: ["sh", "test.sh"]
+    environment:
+      DB_HOST: "db"
+      DB_PORT: "5432"
+      DB_USER: "postgres"
+      DB_PASSWORD: "postgres1"
+      # Name of the database to create/connect to
+      DB_DATABASE: "UnitedStates"
+    depends_on:
+      - db
